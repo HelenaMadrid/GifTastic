@@ -21,20 +21,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="bg-dark">
+    <img src="https://www.feelgoodevents.com.au/wp-content/uploads/2015/03/Entrance-Banner-50cm-by-2m-3.jpg"
+        class="col-12 mb-4">
+
     <div class="container-fluid">
         <!--aquí van los botones-->
         <div class="row">
-            <div id="button"></div>
+            <div class="col-1"></div>
+            <div id="button" class="col-10"></div>
+            <div class="col-1"></div>
         </div>
 
         <div class="row">
             <div id="images" class="col-8"></div>
-            <form id="artists-form" class="col-4 my-3 align-center">
-                <label for="artists-input">Add an Artist!</label>
+            <form id="artists-form" class="col-4 my-3 ">
+                <!--<label for="artists-input" class="text-white ">Add an Artist!</label>
+                <br>-->
                 <input type="text" id="artists-input">
-                <br>
-                <input id="add-artist" type="submit" value="Add an Artist!">
+                <input id="add-artist" type="submit" value="Add an Artist!" class="btn btn-outline-warning">
             </form>
         </div>
 

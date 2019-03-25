@@ -1,4 +1,4 @@
-var topics = ["David Bowie", "Prince", "Beatles", "Rolling Stones", "Fleetwood Mac", "Tina Turner", "Guns N' Roses", "Elton John", "George Michael", "Michael Jackson", "Freddie Mercury", "Aretha Franklin", "Jennifer Holliday"];
+var topics = ["David Bowie", "Prince", "Beatles", "Rolling Stones", "Fleetwood Mac", "Tina Turner", "Guns N' Roses", "Elton John", "George Michael", "Michael Jackson", "Freddie Mercury", "Aretha Franklin", "Jennifer Holliday", "Janis Joplin", "The Who", "Pink Floyd"];
 
 //var artists;
 var apiKey = "OxiG8uG70siK3rjeqb0EjVKmV0y5XaAA&";
@@ -14,7 +14,7 @@ function renderingButtons() {
     topics.forEach(function (element) {
         console.log(element);
         var boton = $("<button >");
-        boton.addClass("artist btn btn-info m-1");
+        boton.addClass("artist btn btn-outline-light m-2");
         boton.attr("data-name", element);
         boton.text(element);
         $("#button").append(boton);
