@@ -21,30 +21,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body class="bg-dark">
+<body style="background-color: black">
     <img src="https://www.feelgoodevents.com.au/wp-content/uploads/2015/03/Entrance-Banner-50cm-by-2m-3.jpg"
-        class="col-12 mb-4">
+        class="col-12 mb-4 col-sm-12">
 
     <div class="container-fluid">
         <!--aquí van los botones-->
         <div class="row">
-            <div class="col-1"></div>
-            <div id="button" class="col-10"></div>
-            <div class="col-1"></div>
+            <div class="col-xl-0 col-lg-0 col-sm-0 col-md-0 col-0"></div>
+            <div id="button" class="col-xl-12 col-lg-12 col-sm-12 col-md-12 col-12 text-center"></div>
+            <div class="col-xl-0 col-lg-0 col-sm-0 col-md-0  col-0"></div>
         </div>
 
         <div class="row">
-            <div id="images" class="col-8"></div>
-            <form id="artists-form" class="col-4 my-3 ">
-                <!--<label for="artists-input" class="text-white ">Add an Artist!</label>
-                <br>-->
-                <input type="text" id="artists-input">
-                <input id="add-artist" type="submit" value="Add an Artist!" class="btn btn-outline-warning">
+            <div class="col-xl-5 col-sm-2 col-md-3 col-1 col-lg-4"></div>
+            <!--<div id="images" class="col-xl-7 col-sm-7 col-12 col-md-8 float-left"></div>-->
+            <form id="artists-form" class="col-xl-2 my-3 col-sm-8 col-10 col-lg-4 col-md-6">
+                <input type="text" id="artists-input" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 my-2">
+                <br>
+                <input id="add-artist" type="submit" value="Add an Artist!"
+                    class="btn btn-outline-warning my-2 my-md-2 col-xl-12 col-lg-12 col-md-12 col-12 col-sm-12 ">
             </form>
+            <div class="col-xl-5 col-sm-2 col-md-3 col-1 col-lg-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5 col-sm-2 col-md-3 col-1 col-lg-4"></div>
+            <button id="loadMore" class="btn btn-outline-info col-xl-2 col-sm-8 col-10 col-lg-4 col-md-6" style="display:none">Get more gifs!</button>
+            <div class="col-xl-5 col-sm-2 col-md-3 col-1 col-lg-4"></div>
         </div>
 
         <div class="row">
-
+            <div class="col-xl-1 col-sm-1 col-md-3 col-1 col-lg-4"></div>
+            <div id="images" class="col-xl-10 col-sm-10 col-10 col-md-10 text-center"></div>
+            <div class="col-xl-1 col-sm-1 col-md-3 col-1 col-lg-4"></div>
         </div>
 
         <div class="row">
