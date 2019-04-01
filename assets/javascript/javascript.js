@@ -2,7 +2,6 @@ var topics = ["Aretha Franklin", "Beatles", "David Bowie", "Elton John", "Fleetw
 
 //var artists;
 var apiKey = "OxiG8uG70siK3rjeqb0EjVKmV0y5XaAA&";
-var display = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var playing = false;
 
 //var queryUrl="https://api.giphy.com/v1/gifs/search?api_key=OxiG8uG70siK3rjeqb0EjVKmV0y5XaAA&q=david-bowie&limit=10&offset=0&rating=R&lang=en";
@@ -61,11 +60,15 @@ function renderingButtons() {
                     var gif = $("<img>");
                     var title = $("<p>");
                     var rating = $("<p>");
+                    var download = $("<a download>");
                     newDiv.addClass("float-left m-2");
                     gif.attr("src", response.data[x].images.original_still.url);
                     gif.addClass("gif m-3 border border-light");
                     gif.attr("style", "height:200px");
                     gif.attr("id", x);
+                    download.attr("href", response.data[x].images.original_still.url);
+                    download.text("Download");
+                    download.addClass("text-white");
                     title.addClass("text-white m-3 text-center text-monospace");
                     title.text("Title: " + response.data[x].title);
                     rating.addClass("text-white m-3 text-center text-monospace");
@@ -74,8 +77,8 @@ function renderingButtons() {
                     newDiv.append(gif);
                     newDiv.append(title);
                     newDiv.append(rating);
+                    newDiv.append(download);
 
-                    // }
                     $("#loadMore").off();
                     $("#loadMore").on("click", function () {
                         queryUrl = "https://api.giphy.com/v1/gifs/search?api_key=" + apiKey + "q=" + artists + "&limit=25&offset=0&rating=R&lang=en";
